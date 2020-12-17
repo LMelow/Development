@@ -1,0 +1,29 @@
+<!-- Global site tag (gtag.js) - Google Ads: 954045450 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-954045450"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-954045450');
+</script>
+{% if first_time_accessed %}
+<script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-954045450',
+    'items': [{
+      'id': 'elementor-button-text',
+      'id': 'replace with value',
+      'google_business_vertical': 'real_estate'
+    }]
+  });
+</script>
+{% endif %}
+<script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-954045450',
+      'value': 1.0,
+      'currency': '{{ currency }}',
+      'transaction_id': '{{ order_number }}',
+    });
+  </script>
